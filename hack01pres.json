@@ -1,0 +1,58 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "hack01pres",
+    "title": "Hack Demo form",
+    "status": "draft",
+    "item": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/terminology-server",
+                    "valueUrl": "https://ontoserver.hackathon-2025.dc4h.link/fhir"
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "autocomplete",
+                                "display": "Auto-complete"
+                            }
+                        ],
+                        "text": "Auto-complete"
+                    }
+                }
+            ],
+            "linkId": "vacc",
+            "text": "VMP Vaccine",
+            "type": "choice",
+            "answerValueSet": "http://snomed.info/sct?fhir_vs=ecl/(%3C%3C%20787859002%20AND%20%5E%20999000561000001109%20)"
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/terminology-server",
+                    "valueUrl": "https://ontoserver.hackathon-2025.dc4h.link/fhir"
+                },
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "autocomplete",
+                                "display": "Auto-complete"
+                            }
+                        ],
+                        "text": "Auto-complete"
+                    }
+                }
+            ],
+            "linkId": "contactpoint",
+            "text": "Contact Point System",
+            "type": "choice",
+            "answerValueSet": "http://hl7.org/fhir/ValueSet/contact-point-system"
+        }
+    ]
+}
